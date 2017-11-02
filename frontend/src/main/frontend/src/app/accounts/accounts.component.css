@@ -1,0 +1,51 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.accounts {
+  list-style-type: none;
+  padding: 0;
+  column-count: 2;
+  display:block;
+}
+.accounts li {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .6em;
+  margin-left: 0;
+  padding: .3em 0;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.accounts li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+}
+.accounts .text {
+  position: relative;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  float:right;
+  padding: .3em .7em;
+  margin: -.3em 0;
+  background-color: gray !important;
+  color:white;
+}

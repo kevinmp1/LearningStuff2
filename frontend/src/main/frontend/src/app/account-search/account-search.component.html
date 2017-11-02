@@ -1,0 +1,10 @@
+<div id="search-component">
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)"
+        placeholder="Search Accounts" class="form-control"/>
+  <div>
+    <div *ngFor="let account of accounts | async"
+         (click)="gotoDetail(account)" class="search-result" >
+      {{account.company}}
+    </div>
+  </div>
+</div>

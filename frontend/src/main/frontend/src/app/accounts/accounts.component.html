@@ -1,0 +1,9 @@
+<ul class="accounts">
+  <li *ngFor="let account of accounts"
+    [class.selected]="account === selectedAccount"
+    (click)="onSelect(account)">
+    <span>{{account.company}}</span>
+    <button class="delete"
+    (click)="delete(account); $event.stopPropagation()">x</button>
+  </li>
+</ul>
