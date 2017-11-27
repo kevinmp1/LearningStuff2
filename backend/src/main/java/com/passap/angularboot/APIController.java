@@ -61,8 +61,8 @@ public class APIController {
 		 accountRepository.delete(Long.parseLong(accountid));
 	}
 	
-	 @RequestMapping("/user")
-	  public Principal user(Principal user) {
-	    return user;
-	  }
+//	 @RequestMapping("/user")
+//	  public Principal user(Principal user) {
+//	    return user;
+//	  }
 }
